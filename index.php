@@ -26,9 +26,16 @@ $aluno->insert();
 echo $aluno;
 */
 
-$usuario = new Usuario();
+//Alterando registro no banco.
+/*$usuario = new Usuario();
 $usuario->loadbyId(9);
 $usuario->update("Alessandra", "147258@");
+echo $usuario;
+*/
+
+$usuario = new Usuario();
+$usuario->loadbyId(7);
+$usuario->delete();
 echo $usuario;
 
  ?>
